@@ -1,0 +1,29 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.prysm.com/
+name: Prysm plans and pricing
+plan_count: 0
+currency: null
+billing_periods: []
+plans: []
+note: >-
+  Prysm publishes no pricing or plans page of any kind. The site navigation and footer carry no
+  Pricing entry, and every commercial path is a sales motion: "Schedule a Demo"
+  (https://www.prysm.com/contact/index.html, 200), "Contact Us" and a gated
+  "Free Trial: Prysm Application Suite" request form (https://www.prysm.com/trial-request/index.html,
+  200). Display hardware (LPD 6K Series, 85" LCD room solutions) and Prysm Application Suite
+  subscriptions are quoted through Prysm sales and its partner channel
+  (https://www.prysm.com/partners/partner-program/index.html, 200). The legal index notes that
+  "User subscriptions and other software are sold and licensed separately", with general terms and
+  conditions of sale distributed only as PDF downloads. This is a recorded absence — an
+  enterprise contact-us posture — not an unchecked field.
+evidence:
+- url: https://www.prysm.com/
+  status: 200
+  note: No Pricing link in primary navigation or footer.
+- url: https://www.prysm.com/trial-request/index.html
+  status: 200
+  note: Free-trial request form; no tiers, quotas or prices stated.
+- url: https://www.prysm.com/legal/index.html
+  status: 200
+  note: Terms and conditions of sale / cloud services published only as PDF downloads.

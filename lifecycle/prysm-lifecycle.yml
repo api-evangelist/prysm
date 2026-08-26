@@ -1,0 +1,75 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.prysm.com/support/status.html
+name: Prysm lifecycle and operational posture
+summary: >-
+  Prysm publishes a first-party per-product status page for the Prysm Application Suite. It publishes
+  no API, and correspondingly no API versioning policy, no deprecation or sunset policy, no SLA
+  document and no changelog. Everything recorded here was read from Prysm's own pages on 2026-08-26.
+status_page:
+  present: true
+  url: https://www.prysm.com/support/status.html
+  http_status: 200
+  hosted: first-party
+  note: >-
+    A static page on www.prysm.com, not a third-party status provider (no Statuspage/Instatus/
+    Better Stack host). At probe time it read "Prysm Application Suite Operational" with
+    "There is currently no scheduled maintenance."
+  components:
+  - Prysm for Web
+  - Prysm for Desktop
+  - Prysm for iPhone
+  - Prysm Administration
+  status_key:
+  - Operational
+  - Maintenance
+  - Incident
+  - Outage
+  history: none published
+  machine_readable_feed:
+    present: false
+    note: No status JSON/RSS/Atom endpoint is linked from the page.
+versioning:
+  policy_published: false
+  scheme: null
+  note: No public API exists, so no API versioning scheme is published.
+deprecation:
+  policy_published: false
+  sunset_header: unknown
+  deprecation_header: unknown
+  rfc8594: false
+  note: >-
+    No deprecation or end-of-life policy is published for the software platform or for any API.
+    RFC 8594 Sunset/Deprecation header behaviour cannot be observed because there is no API to call.
+sla:
+  published: false
+  note: >-
+    No SLA is published on the public site. Terms of Conditions of Cloud Services are distributed as
+    a PDF download from https://www.prysm.com/legal/index.html and were not parsed for uptime terms.
+changelog:
+  published: false
+  note: >-
+    No dated changelog or release-notes page. Product news is announced through the newsroom
+    (https://www.prysm.com/newsroom/index.html) and blog (https://blog.prysm.com/en-us.html).
+deprecated_operations: []
+corporate_lifecycle:
+  founded: 2005
+  founded_as: Spudnik
+  founders:
+  - Amit Jain
+  - Roger Hajjar
+  merger:
+    year: 2014
+    with: Anacore
+    note: Anacore's multi-source interactive canvas became the basis of the digital workplace platform.
+  acquisition:
+    year: 2025
+    acquirer: Motherson Group
+    resulting_entity: Motherson Prysm, Inc.
+    source: https://www.prysm.com/newsroom/index.html
+  site_status:
+    note: >-
+      www.prysm.com is served as a static HTTrack mirror of the former prysmsystems.com HubSpot site,
+      captured 2025-10-28 per the HTTrack comment in the served HTML. prysmsystems.com 301s to
+      prysm.com. The "Help Center" and "Prysm Login" navigation items are javascript:void(0) stubs,
+      and support.prysm.com resolves to 12.1.66.149 but refuses TCP on ports 80 and 443.

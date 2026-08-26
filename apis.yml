@@ -1,17 +1,38 @@
 aid: prysm
 name: Prysm
-description: 'Prysm is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Prysm — legally Motherson Prysm, Inc. — builds large-format interactive display hardware and the
+  Prysm Application Suite, a cloud-hosted visual collaboration and digital-workplace platform.
+  Founded in 2005 in Silicon Valley as Spudnik by Amit Jain and Roger Hajjar, the company invented and
+  patented Laser Phosphor Display (LPD) technology, shipped today as the bezel-free LPD 6K Series
+  single-panel display (up to 225 inches) alongside an 85-inch LCD room solution. In 2014 Prysm merged
+  with Anacore to add a multi-source interactive canvas, producing a platform that combines digital
+  whiteboarding, on-screen annotation, co-browsing, device sharing and Teams/Zoom/Webex launching
+  across web, desktop and iPhone clients for customer experience centers, executive boardrooms and
+  huddle rooms. Prysm became part of the Motherson Group in 2025. Prysm announced an early preview of
+  a "Prysm API" for custom applications on its digital workplace platform in June 2017, but publishes
+  no developer portal, API reference, or machine-readable specification today.
+image: https://www.prysm.com/hubfs/Prysym_Favicon.png
 url: https://raw.githubusercontent.com/api-evangelist/prysm/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Collaboration
+- Visual Collaboration
+- Digital Workplace
+- Displays
+- Display Technology
+- Hardware
+- Meetings
+- Whiteboarding
+- Enterprise Software
+- Unified Communications
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +40,71 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/prysm-domain-security.yml
 - type: Website
+  url: https://www.prysm.com/
+- type: Documentation
+  url: https://www.prysm.com/resources/index.html
+- type: Support
+  url: https://www.prysm.com/support/index.html
+- type: StatusPage
+  url: https://www.prysm.com/support/status.html
+- type: Blog
+  url: https://blog.prysm.com/en-us.html
+- type: BlogRSS
+  url: https://blog.prysm.com/en-us/rss.xml
+- type: Newsroom
+  url: https://www.prysm.com/newsroom/index.html
+- type: TermsOfService
+  url: https://www.prysm.com/legal/terms-and-conditions/index.html
+- type: PrivacyPolicy
+  url: https://www.prysm.com/legal/privacy-policy.html
+- type: SignUp
+  url: https://www.prysm.com/trial-request/index.html
+- type: Partners
+  url: https://www.prysm.com/partners/partner-program/index.html
+- type: Contact
+  url: https://www.prysm.com/contact/index.html
+- type: About
+  url: https://www.prysm.com/company/index.html
+- type: Careers
+  url: https://www.prysm.com/company/careers/index.html
+- type: SecondaryMarketListing
   url: https://forgeglobal.com/prysm_stock/
+- type: Lifecycle
+  url: lifecycle/prysm-lifecycle.yml
+- type: LLMsTxt
+  url: llms/prysm-llms.txt
+- type: Plans
+  url: plans/prysm-plans-pricing.yml
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Prysm ships an end-user product only — LPD 6K displays plus the Prysm Application Suite desktop,
+    web and iPhone clients — and www.prysm.com is a static HTTrack mirror (captured 2025-10-28) of the
+    former prysmsystems.com HubSpot site with no developer, docs or API entry anywhere in its
+    navigation; the 2017 "Prysm API" early-preview announcement never produced a public reference, and
+    developer/docs/api.prysm.com do not resolve in DNS.
+  evidence:
+  - url: https://www.prysm.com/
+    status: 200
+  - url: https://www.prysm.com/support/index.html
+    status: 200
+  - url: https://www.prysm.com/openapi.json
+    status: 404
+  - url: https://www.prysm.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.prysm.com/.well-known/agent-card.json
+    status: 404
+  - url: https://blog.prysm.com/newsroom/news/prysm-api-creates-customized-collaboration-experiences/
+    status: 200
+  - url: https://support.prysm.com/
+    status: 0
+  checked: '2026-08-26'

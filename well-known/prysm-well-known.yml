@@ -1,0 +1,61 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of https://<host>/.well-known/* on every host named in apis.yml
+note: 'Every /.well-known/ path 404s on both Prysm hosts. www.prysm.com is a static HTTrack mirror (the
+  served HTML carries a ''Mirrored from www.prysm.com/ by HTTrack Website Copier/3.x ... Tue, 28 Oct 2025''
+  comment) of the former prysmsystems.com HubSpot site, so no origin application is present to serve a
+  well-known document. No WellKnown or SecurityTxt pointer is emitted: this file records a measured absence,
+  not a served surface.'
+hosts:
+- host: www.prysm.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: blog.prysm.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
