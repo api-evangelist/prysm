@@ -12,6 +12,17 @@ description: >-
   huddle rooms. Prysm became part of the Motherson Group in 2025. Prysm announced an early preview of
   a "Prysm API" for custom applications on its digital workplace platform in June 2017, but publishes
   no developer portal, API reference, or machine-readable specification today.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.prysm.com/hubfs/Prysym_Favicon.png
 url: https://raw.githubusercontent.com/api-evangelist/prysm/refs/heads/main/apis.yml
 x-type: company
